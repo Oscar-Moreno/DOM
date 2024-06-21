@@ -4,25 +4,24 @@ import '../scss/styles.scss';
 // - Partiendo de este HTML selecciona en JavaScript el h3 y utilizándolo como punto de partida imprime la información de todos los elementos que hay en formato "familia": Soy un h3 con el id... y la clase... mi padre es un header con.... mi hermano es un h1 con....
 
 
+ const elementH3 = document.getElementById('start-point');
 
-// const elementH3 = document.getElementById('start-point');
-
-// console.log('Soy un h3 con el id ' + elementH3.id + ' y la clase' + elementH3.className + ' mi padre es un header con el id ' + elementH3.parentElement.id + ' y la clase ' + elementH3.parentElement.className + ' y mi hermano es un h1 con ' + elementH3.parentElement.children[0].id + ' que tiene la clase ' + elementH3.parentElement.children[0].className);
+console.log('Soy un h3 con el id ' + elementH3.id + ' y la clase' + elementH3.className + ' mi padre es un header con el id ' + elementH3.parentElement.id + ' y la clase ' + elementH3.parentElement.className + ' y mi hermano es un h1 con ' + elementH3.parentElement.children[0].id + ' que tiene la clase ' + elementH3.parentElement.children[0].className);
 
 
 
 
 
 // - Partiendo de esta lista, intercambia los textos de los li, deberás tener este resultado sin modificar a mano el HTML. Importante, no hay que mover el <li> sólo cambiar el contenido.
+const firstUl = document.getElementById ('first-list');
+const secondUl = document.getElementById ('second-list');
 
-// const firstUl = document.getElementById ('first-list')
-// const secondUl = document.getElementById ('second-list')
+const first = firstUl.textContent;
+const second = secondUl.textContent;
 
-// const first = firstUl.textContent
-// const second = secondUl.textContent
-
-// firstUl.textContent= second
-// secondUl.textContent= first
+firstUl.textContent= second;
+secondUl.textContent= first;
+ 
 
 
 
